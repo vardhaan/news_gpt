@@ -1,7 +1,7 @@
 import os
 import requests
 from utils import convert_utc_string_to_datetime
-import News
+import classes.News as News
 
 API_KEY = os.environ.get('NEWS_API_KEY')
 
@@ -9,6 +9,7 @@ API_KEY = os.environ.get('NEWS_API_KEY')
 def get_breaking_news(datetime_string=None):
     url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=' + API_KEY
     response = requests.get(url)
+    print(response)
     python_object_news_list = parse_news_list(response.json()['articles'])
     if datetime_string:
         datetime_object = convert_utc_string_to_datetime(datetime_string)
