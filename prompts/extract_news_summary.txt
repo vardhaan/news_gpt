@@ -1,0 +1,3 @@
+News text: {}
+
+Extract the main summary of the above text, as bullet points:
