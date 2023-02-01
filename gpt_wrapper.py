@@ -12,4 +12,3 @@ def send_completion_request(prompt, model_choice="text_davinci-003",
     )
     return response['choices'][0]['text']
 
-
