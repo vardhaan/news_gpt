@@ -1,4 +1,4 @@
-News title: {}
-News text: {}
+News title: {title}
+News text: {text}
 
 Extract the main summary of the above text, as bullet points:

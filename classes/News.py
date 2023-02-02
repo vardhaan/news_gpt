@@ -11,7 +11,8 @@ class News:
 
     def __str__(self):
         published_at_string = convert_datetime_to_utc_string(self.published_at)
-        return 'Title: ' + self.title + 'Published At: ' + published_at_string
+        summary_string = self.summary if self.summary else ''
+        return 'Title: ' + self.title + '\nSummary: ' + summary_string + '\nPublished At: ' + published_at_string
     
     def add_summary(self, summary):
         self.summary = summary

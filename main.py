@@ -1,6 +1,6 @@
 import news_api_wrapper as news
 import url_scraper as scraper
-import gpt_wrapper as gpt
+from gpt_wrapper import GPT as gpt
 
 '''
 breaking_news = news.get_breaking_news()
